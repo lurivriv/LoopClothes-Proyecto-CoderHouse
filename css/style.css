@@ -79,6 +79,11 @@ i {
   text-decoration: none;
 }
 
+/* catalogo: menu desplegable (dropdown) */
+#menu-desplegable-hamburguesa {
+  display: none;
+}
+
 /* buscador y carrito */
 .navbar-btn-container {
   width: 80px;
@@ -154,6 +159,15 @@ footer {
 
 .card-img-top {
   border-radius: 8px;
+}
+
+/* responsive */
+.responsive-mayor768 {
+  display: none;
+}
+
+.responsive-mayor320 {
+  display: none;
 }
 
 
@@ -287,4 +301,325 @@ footer {
   font-size: 1rem;
   border: none;
   font-weight: 500;
+}
+
+
+
+
+
+/* media queries */
+
+@media screen and (max-width: 1200px) {
+
+  /* MAIN GENERAL */
+  
+  /* responsive */
+  .responsive-mayor1200 {
+    display: none;
+  }
+  
+  .responsive-mayor768 {
+    display: flex;
+  }
+  
+  
+  /* MAIN: CONTACTO */
+  
+  /* redes sociales */
+  .subtitulo-contacto {
+    font-size: 1rem;
+  }
+  
+  .red-social-icon-contacto {
+    font-size: 1.5rem;
+  }
+  
+  .texto-contacto {
+    font-size: 1rem;
+  }
+  
+  /* formulario */
+  .btn-form {
+    font-size: 0.8rem;
+  }
+  
+}
+  
+  
+  
+@media screen and (max-width: 991px) {
+  
+  /* HEADER Y NAV */
+  
+  /* menu hamburguesa (responsive) */
+  .navbar-toggler {
+    border: none;
+    color: #ffffff;
+  }
+  
+  /* logo */
+  .navbar-brand {
+    margin: auto;
+  }
+  
+  /* catalogo: menu desplegable (hover) */
+  #menu-desplegable-hover {
+    display: none;
+  }
+  
+  .desplegable {
+    display: none;
+  }
+  
+  .desplegable__contenido {
+    display: none;
+  }
+  
+  .desplegable__contenido a {
+    display: none;
+  }
+
+  /* catalogo: menu desplegable (dropdown) */
+  #menu-desplegable-hamburguesa {
+    display: block;
+  }
+
+  .nav-link-dropdown {
+    color: #1a1a1a;
+  }
+
+  .dropdown-menu {
+    border: none;
+  }
+
+  .dropdown-item-primero {
+    font-weight: 500;
+  }
+
+  .dropdown-item {
+    color: #1a1a1a;
+  }
+
+  /* buscador y carrito */
+  .navbar-btn-order {
+    order: 0;
+  }
+
+
+  /* MAIN GENERAL */
+
+  /* titulo de la sección */
+  .section__titulo {
+    font-size: 1.4rem;
+  }
+
+
+  /* MAIN: INDEX */
+
+  /* banner */
+  #sectionUno {
+    height: 380px;
+  }
+
+  .sectionUno__subtituloBanner {
+    font-size: 4rem;
+  }
+
+  .sectionUno__parrafoBanner {
+    width: 660px;
+    font-size: 0.9rem;
+  }
+
+
+  /* MAIN: CÓMO COMPRAR */
+
+  .como-comprar-imagen {
+    width: 65px;
+  }
+
+  .como-comprar-subtitulos {
+    font-size: 1.3rem;
+  }
+
+  .como-comprar-texto {
+    font-size: 0.8rem;
+  }
+
+  .como-comprar-texto-subtitulos {
+    font-size: 0.9rem;
+  }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  /* HEADER Y NAV */
+  
+  /* buscador y carrito */
+  .navbar-btn {
+    padding: 6px;
+  }
+  
+  
+  /* FOOTER */
+  
+  footer {
+    margin-top: 50px;
+    padding-top: 30px;
+  }
+  
+  
+  /* MAIN GENERAL */
+  
+  /* titulo de la sección */
+  .section__titulo {
+    font-size: 1.2rem;
+  }
+  
+  /* responsive */
+  .responsive-mayor768 {
+    display: none;
+  }
+  
+  .responsive-mayor320 {
+    display: flex;
+  }
+  
+  
+  /* MAIN: INDEX */
+  
+  /* banner */
+  #sectionUno {
+    height: 320px;
+  }
+  
+  .sectionUno__subtituloBanner {
+    font-size: 2.9rem;
+  }
+  
+  .sectionUno__parrafoBanner {
+    width: 400px;
+    font-size: 0.8rem;
+  }
+  
+  
+  /* MAIN: CÓMO COMPRAR */
+  
+  .como-comprar-subtitulos {
+    font-size: 1.5rem;
+  }
+  
+  .como-comprar-texto {
+    font-size: 1rem;
+  }
+  
+  .como-comprar-texto-subtitulos {
+    font-size: 1.1rem;
+  }
+  
+  
+  /* MAIN: CONOCENOS */
+  
+  .parrafoConocenos {
+    font-size: 1rem;
+  }
+  
+  }
+  
+  
+  
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  
+  /* HEADER Y NAV */
+  
+  /* buscador y carrito */
+  .navbar-btn-container {
+    width: 60px;
+    margin-right: 15px;
+  }
+  
+  .navbar-btn {
+    padding: 4px;
+  }
+  
+  
+  /* MAIN GENERAL */
+  
+  /* titulo de la sección */
+  .section__titulo {
+    font-size: 0.9rem;
+  }
+  
+  
+  /* MAIN: INDEX */
+  
+  /* banner */
+  #sectionUno {
+    height: 220px;
+  }
+  
+  .sectionUno__subtituloBanner {
+    font-size: 1.5rem;
+  }
+  
+  .sectionUno__parrafoBanner {
+    width: 300px;
+    font-size: 0.6rem;
+  }
+  
+  
+  /* MAIN: CÓMO COMPRAR */
+  
+  .como-comprar-imagen {
+    width: 60px;
+  }
+  
+  .como-comprar-subtitulos {
+    font-size: 1rem;
+  }
+  
+  .como-comprar-texto {
+    font-size: 0.8rem;
+  }
+  
+  .como-comprar-texto-subtitulos {
+    font-size: 0.9rem;
+  }
+  
+  
+  /* MAIN: CONOCENOS */
+  
+  .parrafoConocenos {
+    font-size: 0.8rem;
+    margin: 20px 20px 10px 20px;
+  }
+  
+  
+  /* MAIN: CONTACTO */
+  
+  /* redes sociales */
+  .subtitulo-contacto {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  
+  .item-contacto {
+    margin-bottom: 20px;
+  }
+  
+  .red-social-icon-contacto {
+    font-size: 1.2rem;
+  }
+  
+  .texto-contacto {
+    font-size: 0.9rem;
+  }
+  
+  /* formulario */
+  .btn-form {
+    font-size: 0.9rem;
+  }
+  
 }

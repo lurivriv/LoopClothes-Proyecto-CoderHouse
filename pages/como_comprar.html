@@ -44,7 +44,7 @@
                             <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
                         </li>
                         <!-- catalogo: menu desplegable (hover) -->
-                        <li class="nav-item">
+                        <li id="menu-desplegable-hover" class="nav-item">
                             <div class="desplegable">
                                 <a class="nav-link dropdown-toggle" href="catalogo.html">
                                     CATÁLOGO
@@ -62,6 +62,24 @@
                                     </ul>
                                 </div>
                             </div>
+                        </li>
+                        <!-- catalogo: menu desplegable (dropdown) -->
+                        <li id="menu-desplegable-hamburguesa" class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-link-dropdown navSeccionesHover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              CATÁLOGO
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item dropdown-item-primero" href="./pages/catalogo.html">Catálogo completo</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Buzos</a></li>
+                                <li><a class="dropdown-item" href="#">Calzado</a></li>
+                                <li><a class="dropdown-item" href="#">Camisas</a></li>
+                                <li><a class="dropdown-item" href="#">Camperas</a></li>
+                                <li><a class="dropdown-item" href="#">Pantalones y Jeans</a></li>
+                                <li><a class="dropdown-item" href="#">Remeras y Tops</a></li>
+                                <li><a class="dropdown-item" href="#">Shorts</a></li>
+                                <li><a class="dropdown-item" href="#">Vestidos</a></li>
+                            </ul>
                         </li>
                         <!-- otros items del nav -->
                         <li class="nav-item">
