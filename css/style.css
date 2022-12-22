@@ -1,0 +1,290 @@
+/* CSS GENERAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #1a1a1a;
+  box-sizing: border-box;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+i {
+  color: #1a1a1a;
+}
+
+
+/* HEADER Y NAV */
+
+.header-bg-color {
+  background-color: #ffffff;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+/* logo */
+.logoHeader__tamaño {
+  width: 100px;
+}
+
+/* items del nav */
+.nav-item {
+  padding: 10px;
+}
+
+.nav-link {
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+/* catalogo: menu desplegable (hover) */
+.desplegable {
+  display: inline-block;
+  position: relative;
+}
+
+.desplegable__contenido {
+  display: none;
+  position: absolute;
+  width: 188px;
+  overflow: auto;
+  background-color: #F6F6F6;
+  border-radius: 0px 0px 4px 4px;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+.desplegable:hover .desplegable__contenido {
+  display: block;
+}
+
+.desplegable__contenido a {
+  display: block;
+  color: #1A1A1A;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* buscador y carrito */
+.navbar-btn-container {
+  width: 80px;
+}
+
+.navbar-btn {
+  background-color: #ffffff;
+  border: none;
+  padding: 10px;
+}
+
+.navbar-btn-order {
+  order: 100;
+}
+
+
+/* FOOTER */
+
+footer {
+  background-color: #1a1a1a;
+  margin-top: 80px;
+  padding-top: 40px;
+  padding-bottom: 24px;
+}
+
+.logoFooter {
+  width: 100px;
+}
+
+.red-social-alineacion {
+  text-align: center;
+}
+
+.red-social-icon {
+  color: #F6F6F6;
+  font-size: 1.5rem;
+}
+
+.h4-copyright {
+  text-align: center;
+  font-size: 0.625rem;
+  font-weight: 500;
+  color: #b7b7b7;
+}
+
+
+/* MAIN GENERAL*/
+
+/* titulo de la sección */
+.section__titulo {
+  font-size: 1.75rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+/* cards */
+.card {
+  border: none;
+}
+
+.card-title {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.card-subtitle {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.card-img-top {
+  border-radius: 8px;
+}
+
+
+/* MAIN: INDEX */
+
+/* banner */
+#sectionUno {
+  width: 100vw;
+  height: 480px;
+  background-image: url(../images/banner_index.jpg);
+  background-size: cover;
+  text-align: center;
+}
+
+.sectionUno__subtituloBanner {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.sectionUno__parrafoBanner {
+  width: 800px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 auto 30px auto;
+}
+
+
+/* MAIN: CATÁLOGO */
+
+/* select */
+.form-select-sm {
+  padding: 8px;
+}
+
+/* páginas del catalogo */
+.paginas-catalogo {
+  border-radius: 0px;
+  margin: 10px;
+  padding: 10px;
+  font-weight: 600;
+}
+
+
+/* MAIN: CÓMO COMPRAR */
+
+.como-comprar-container {
+  background-color: #1a1a1a;
+}
+
+.como-comprar-imagen {
+  width: 70px;
+  margin: 26px;
+}
+
+.como-comprar-subtitulos {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #F6F6F6;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.como-comprar-texto {
+  font-size: 0.875rem;
+  color: #F6F6F6;
+}
+
+.como-comprar-texto-subtitulos {
+  font-size: 1rem;
+  color: #F6F6F6;
+}
+
+
+/* MAIN: CONOCÉNOS */
+
+/* texto */
+.parrafoConocenos {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 20px 0px;
+}
+
+/* carrusel de imagenes */
+.imagenConocenos {
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+/* MAIN: CONTACTO */
+
+/* redes sociales */
+.subtitulo-contacto {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.item-contacto {
+  margin-bottom: 40px;
+}
+
+.red-social-icon-contacto {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.texto-contacto {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* formulario */
+.form-control-sm {
+  padding: 10px;
+  border: 1px solid #a4a4a4;
+  font-weight: 500;
+}
+
+.text-area {
+  resize: none;
+  height: 150px;
+}
+
+.btn-form {
+  padding: 8px;
+  background-color: #1A1A1A;
+  color: #F6F6F6;
+  border-radius: 10px;
+  font-size: 1rem;
+  border: none;
+  font-weight: 500;
+}
