@@ -50,6 +50,14 @@ i {
   font-weight: 500;
 }
 
+.navSeccionesHover {
+  transition: color 0.3s ease;
+}
+
+.navSeccionesHover:hover {
+  color: #ff9a9a;
+}
+
 /* catalogo: menu desplegable (hover) */
 .desplegable {
   display: inline-block;
@@ -77,6 +85,11 @@ i {
   color: #1A1A1A;
   padding: 8px 16px;
   text-decoration: none;
+}
+
+.desplegable__contenido a:hover {
+  color: #F6F6F6;
+  background-color: #1A1A1A;
 }
 
 /* catalogo: menu desplegable (dropdown) */
@@ -118,8 +131,13 @@ footer {
 }
 
 .red-social-icon {
+  transition: color 0.3s ease;
   color: #F6F6F6;
   font-size: 1.5rem;
+}
+
+.red-social-icon:hover {
+  color: #ff9a9a;
 }
 
 .h4-copyright {
@@ -158,7 +176,12 @@ footer {
 }
 
 .card-img-top {
+  transition: box-shadow 0.3s ease;
   border-radius: 8px;
+}
+
+.card-img-top:hover {
+  box-shadow: 0px 5px 8px rgb(26, 26, 26, 0.4);
 }
 
 /* responsive */
@@ -210,6 +233,10 @@ footer {
   font-weight: 600;
 }
 
+.btn-icon:hover i {
+  color: #F6F6F6;
+}
+
 
 /* MAIN: CÓMO COMPRAR */
 
@@ -238,6 +265,15 @@ footer {
 .como-comprar-texto-subtitulos {
   font-size: 1rem;
   color: #F6F6F6;
+}
+
+/* vende lo que ya no usas */
+.como-comprar-redes {
+  transition: color 0.3s ease;
+}
+
+.como-comprar-redes:hover {
+  color: #FF9A9A;
 }
 
 
@@ -272,13 +308,23 @@ footer {
 }
 
 .red-social-icon-contacto {
+  transition: color 0.3s ease;
   font-size: 2rem;
   text-align: center;
 }
 
+.red-social-icon-contacto:hover {
+  color: #ff9a9a;
+}
+
 .texto-contacto {
+  transition: color 0.3s ease;
   font-size: 1.2rem;
   font-weight: 500;
+}
+
+.texto-contacto:hover {
+  color: #ff9a9a;
 }
 
 /* formulario */
@@ -294,6 +340,7 @@ footer {
 }
 
 .btn-form {
+  transition: all 0.3s ease;
   padding: 8px;
   background-color: #1A1A1A;
   color: #F6F6F6;
@@ -301,6 +348,11 @@ footer {
   font-size: 1rem;
   border: none;
   font-weight: 500;
+}
+
+.btn-form:hover {
+  background-image: linear-gradient(to bottom, #ff9a9a, #fbadad);
+  color: #1a1a1a;
 }
 
 
@@ -398,6 +450,11 @@ footer {
 
   .dropdown-item {
     color: #1a1a1a;
+  }
+
+  .dropdown-item:hover {
+    color: #F6F6F6;
+    background-color: #1A1A1A;
   }
 
   /* buscador y carrito */
@@ -526,7 +583,7 @@ footer {
     font-size: 1rem;
   }
   
-  }
+}
   
   
   
