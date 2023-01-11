@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Navegá por nuestro catálogo y brindále una segunda oportunidad a las prendas de ropa que otras personas ya no quieren.">
+    <meta name="keywords"  content="catalogo, prendas de ropa, second hand, ropa de segunda mano, ropa, comprar ropa, vender ropa">
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/8991c871c6.js" crossorigin="anonymous"></script>
+    <!-- Animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- Custom CSS -->
@@ -18,7 +22,7 @@
     <title>Catálogo - Loop Clothes</title>
 </head>
 <body>
-    <header class="sticky-top header-bg-color">
+    <header class="sticky-top">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <!-- menu hamburguesa (responsive) -->
@@ -27,29 +31,29 @@
                 </button>
                 <!-- logo -->
                 <a class="navbar-brand" href="../index.html">
-                    <img class="logoHeader__tamaño"
+                    <img
                     src="../images/logo_loop_clothes.svg"
                     alt="Logo Loop clothes"
                     >
                 </a>
                 <!-- buscador y carrito -->
-                <div class="navbar-btn-container navbar-btn-order">
+                <div class="navbar-btn-container">
                     <button class="navbar-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
                     <button class="navbar-btn"><i class="fa-solid fa-cart-shopping"></i></button>
                 </div>
                 <!-- nav -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link navSeccionesHover" aria-current="page" href="../index.html">INICIO</a>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
                         </li>
                         <!-- catalogo: menu desplegable (hover) -->
-                        <li id="menu-desplegable-hover" class="nav-item">
+                        <li id="menu-desplegable-hover" class="nav-item p-2">
                             <div class="desplegable">
-                                <a class="nav-link dropdown-toggle navSeccionesHover" href="catalogo.html">
-                                    <b class="navSeccionesHover">CATÁLOGO</b>
+                                <a class="nav-link dropdown-toggle" href="catalogo.html">
+                                    <b>CATÁLOGO</b>
                                 </a>
-                                <div class="desplegable__contenido">
+                                <div class="desplegable-contenido">
                                     <ul>
                                         <li><a href="#">Buzos</a></li>
                                         <li><a href="#">Calzado</a></li>
@@ -64,12 +68,12 @@
                             </div>
                         </li>
                         <!-- catalogo: menu desplegable (dropdown) -->
-                        <li id="menu-desplegable-hamburguesa" class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle nav-link-dropdown navSeccionesHover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <b class="navSeccionesHover">CATÁLOGO</b>
+                        <li id="menu-desplegable-hamburguesa" class="nav-item p-2 dropdown">
+                            <a class="nav-link dropdown-toggle nav-link-dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <b>CATÁLOGO</b>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item dropdown-item-primero" href="./pages/catalogo.html">Catálogo completo</a></li>
+                                <li><a class="dropdown-item dropdown-first-item" href="catalogo.html">Catálogo completo</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="#">Buzos</a></li>
                                 <li><a class="dropdown-item" href="#">Calzado</a></li>
@@ -82,14 +86,14 @@
                             </ul>
                         </li>
                         <!-- otros items del nav -->
-                        <li class="nav-item">
-                            <a class="nav-link navSeccionesHover" href="como_comprar.html">CÓMO COMPRAR</a>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="como_comprar.html">CÓMO COMPRAR</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link navSeccionesHover" href="conocenos.html">CONOCÉNOS</a>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="conocenos.html">CONOCÉNOS</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link navSeccionesHover" href="contacto.html">CONTACTO</a>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="contacto.html">CONTACTO</a>
                         </li>
                     </ul>
                 </div>
@@ -101,13 +105,13 @@
         <div class="container-fluid">
             <!-- titulo -->
             <div class="row">
-                <h2 class="section__titulo">CATÁLOGO</h2>
+                <h2 class="section-titulo">CATÁLOGO</h2>
             </div>
             <!-- section catalogo -->
             <section class="row">
                 <!-- select -->
                 <div class="row justify-content-center mx-0 px-0">
-                    <select class="col-8 col-md-4 col-lg-3 my-3 form-select-sm" aria-label="Default select example">
+                    <select class="col-8 col-md-4 col-lg-3 my-3 form-select-sm p-2" aria-label="Default select example">
                         <option selected>Ordenar por los últimos</option>
                         <option value="Ordenar por popularidad">Ordenar por popularidad</option>
                         <option value="Ordenar por precio: bajo a alto">Ordenar por precio: bajo a alto</option>
@@ -177,7 +181,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center mx-0 my-2">
+                    <div data-aos="fade-up" class="row justify-content-center mx-0 my-2">
                         <div class="card col-2">
                             <a href="#"><img src="../images/products/catalogo/catalogo_9.jpg" class="card-img-top" alt="Remera Daniel Cassin"></a>
                             <div class="card-body px-0">
@@ -207,7 +211,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center mx-0 my-2">
+                    <div data-aos="fade-up" class="row justify-content-center mx-0 my-2">
                         <div class="card col-2">
                             <a href="#"><img src="../images/products/catalogo/catalogo_13.jpg" class="card-img-top" alt="Campera con número"></a>
                             <div class="card-body px-0">
@@ -237,7 +241,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center mx-0 my-2">
+                    <div data-aos="fade-up" class="row justify-content-center mx-0 my-2">
                         <div class="card col-2">
                             <a href="#"><img src="../images/products/catalogo/catalogo_17.jpg" class="card-img-top" alt="Campera cierre dorado"></a>
                             <div class="card-body px-0">
@@ -267,7 +271,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center mx-0 my-2">
+                    <div data-aos="fade-up" class="row justify-content-center mx-0 my-2">
                         <div class="card col-2">
                             <a href="#"><img src="../images/products/catalogo/catalogo_21.jpg" class="card-img-top" alt="Campera con peludito"></a>
                             <div class="card-body px-0">
@@ -297,7 +301,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center mx-0 my-2">
+                    <div data-aos="fade-up" class="row justify-content-center mx-0 my-2">
                         <div class="card col-2">
                             <a href="#"><img src="../images/products/catalogo/catalogo_25.jpg" class="card-img-top" alt="Campera deportiva"></a>
                             <div class="card-body px-0">
@@ -327,7 +331,7 @@
                             </div>
                         </div>
                     </div>
-                   <div class="row justify-content-center mx-0 my-2">
+                   <div data-aos="fade-up" class="row justify-content-center mx-0 my-2">
                         <div class="card col-2">
                             <a href="#"><img src="../images/products/catalogo/catalogo_29.jpg" class="card-img-top" alt="Remera H&G azul"></a>
                             <div class="card-body px-0">
@@ -357,7 +361,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center mx-0 my-2">
+                    <div data-aos="fade-up" class="row justify-content-center mx-0 my-2">
                         <div class="card col-2">
                             <a href="#"><img src="../images/products/catalogo/catalogo_33.jpg" class="card-img-top" alt="Vestido H&M floreado"></a>
                             <div class="card-body px-0">
@@ -387,7 +391,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center mx-0 my-2">
+                    <div data-aos="fade-up" class="row justify-content-center mx-0 my-2">
                         <div class="card col-2">
                             <a href="#"><img src="../images/products/catalogo/catalogo_37.jpg" class="card-img-top" alt="Sandalias Korium negro"></a>
                             <div class="card-body px-0">
@@ -466,7 +470,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center mx-0 my-2">
+                    <div data-aos="fade-up" class="row justify-content-center mx-0 my-2">
                         <div class="card col-3">
                             <a href="#"><img src="../images/products/catalogo/catalogo_7.jpg" class="card-img-top" alt="Campera amarilla"></a>
                             <div class="card-body px-0">
@@ -489,7 +493,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center mx-0 my-2">
+                    <div data-aos="fade-up" class="row justify-content-center mx-0 my-2">
                         <div class="card col-3">
                             <a href="#"><img src="../images/products/catalogo/catalogo_10.jpg" class="card-img-top" alt="Camisa a lunares"></a>
                             <div class="card-body px-0">
@@ -512,7 +516,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center mx-0 my-2">
+                    <div data-aos="fade-up" class="row justify-content-center mx-0 my-2">
                         <div class="card col-3">
                             <a href="#"><img src="../images/products/catalogo/catalogo_13.jpg" class="card-img-top" alt="Campera con número"></a>
                             <div class="card-body px-0">
@@ -535,7 +539,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center mx-0 my-2">
+                    <div data-aos="fade-up" class="row justify-content-center mx-0 my-2">
                         <div class="card col-3">
                             <a href="#"><img src="../images/products/catalogo/catalogo_16.jpg" class="card-img-top" alt="Campera beige"></a>
                             <div class="card-body px-0">
@@ -558,7 +562,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center mx-0 my-2">
+                    <div data-aos="fade-up" class="row justify-content-center mx-0 my-2">
                         <div class="card col-3">
                             <a href="#"><img src="../images/products/catalogo/catalogo_19.jpg" class="card-img-top" alt="Buzo de lanilla"></a>
                             <div class="card-body px-0">
@@ -581,7 +585,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center mx-0 my-2">
+                    <div data-aos="fade-up" class="row justify-content-center mx-0 my-2">
                         <div class="card col-3">
                             <a href="#"><img src="../images/products/catalogo/catalogo_22.jpg" class="card-img-top" alt="Buzo de lana"></a>
                             <div class="card-body px-0">
@@ -604,7 +608,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center mx-0 my-2">
+                    <div data-aos="fade-up" class="row justify-content-center mx-0 my-2">
                         <div class="card col-3">
                             <a href="#"><img src="../images/products/catalogo/catalogo_25.jpg" class="card-img-top" alt="Campera deportiva"></a>
                             <div class="card-body px-0">
@@ -627,7 +631,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center mx-0 my-2">
+                    <div data-aos="fade-up" class="row justify-content-center mx-0 my-2">
                         <div class="card col-3">
                             <a href="#"><img src="../images/products/catalogo/catalogo_28.jpg" class="card-img-top" alt="Manga corta estampada"></a>
                             <div class="card-body px-0">
@@ -685,7 +689,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center mx-0 my-2">
+                    <div data-aos="fade-up" class="row justify-content-center mx-0 my-2">
                         <div class="card col-5">
                             <a href="#"><img src="../images/products/catalogo/catalogo_5.jpg" class="card-img-top" alt="Short 5 botones"></a>
                             <div class="card-body px-0">
@@ -701,7 +705,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center mx-0 my-2">
+                    <div data-aos="fade-up" class="row justify-content-center mx-0 my-2">
                         <div class="card col-5">
                             <a href="#"><img src="../images/products/catalogo/catalogo_7.jpg" class="card-img-top" alt="Campera amarilla"></a>
                             <div class="card-body px-0">
@@ -717,7 +721,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center mx-0 my-2">
+                    <div data-aos="fade-up" class="row justify-content-center mx-0 my-2">
                         <div class="card col-5">
                             <a href="#"><img src="../images/products/catalogo/catalogo_9.jpg" class="card-img-top" alt="Remera Daniel Cassin"></a>
                             <div class="card-body px-0">
@@ -733,7 +737,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center mx-0 my-2">
+                    <div data-aos="fade-up" class="row justify-content-center mx-0 my-2">
                         <div class="card col-5">
                             <a href="#"><img src="../images/products/catalogo/catalogo_11.jpg" class="card-img-top" alt="Musculosa rosada"></a>
                             <div class="card-body px-0">
@@ -749,7 +753,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center mx-0 my-2">
+                    <div data-aos="fade-up" class="row justify-content-center mx-0 my-2">
                         <div class="card col-5">
                             <a href="#"><img src="../images/products/catalogo/catalogo_13.jpg" class="card-img-top" alt="Campera con número"></a>
                             <div class="card-body px-0">
@@ -765,7 +769,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center mx-0 my-2">
+                    <div data-aos="fade-up" class="row justify-content-center mx-0 my-2">
                         <div class="card col-5">
                             <a href="#"><img src="../images/products/catalogo/catalogo_15.jpg" class="card-img-top" alt="Canguro violeta"></a>
                             <div class="card-body px-0">
@@ -781,7 +785,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center mx-0 my-2">
+                    <div data-aos="fade-up" class="row justify-content-center mx-0 my-2">
                         <div class="card col-5">
                             <a href="#"><img src="../images/products/catalogo/catalogo_17.jpg" class="card-img-top" alt="Campera cierre dorado"></a>
                             <div class="card-body px-0">
@@ -797,7 +801,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center mx-0 my-2">
+                    <div data-aos="fade-up" class="row justify-content-center mx-0 my-2">
                         <div class="card col-5">
                             <a href="#"><img src="../images/products/catalogo/catalogo_19.jpg" class="card-img-top" alt="Buzo de lanilla"></a>
                             <div class="card-body px-0">
@@ -820,7 +824,7 @@
                     <div class="col-2 btn-group p-0">
                         <a href="catalogo.html" class="btn paginas-catalogo btn-dark" aria-current="page">1</a>
                         <a href="#" class="btn paginas-catalogo btn-outline-dark">2</a>
-                        <a href="#" class="btn paginas-catalogo btn-outline-dark btn-icon"><i class="fa-solid fa-chevron-right"></i></a>
+                        <a href="#" class="btn paginas-catalogo btn-outline-dark"><i class="fa-solid fa-chevron-right"></i></a>
                     </div>
                 </div>
                 <!-- mayor a 768px -->
@@ -828,7 +832,7 @@
                     <div class="col-3 btn-group p-0">
                         <a href="catalogo.html" class="btn paginas-catalogo btn-dark" aria-current="page">1</a>
                         <a href="#" class="btn paginas-catalogo btn-outline-dark">2</a>
-                        <a href="#" class="btn paginas-catalogo btn-outline-dark btn-icon"><i class="fa-solid fa-chevron-right"></i></a>
+                        <a href="#" class="btn paginas-catalogo btn-outline-dark"><i class="fa-solid fa-chevron-right"></i></a>
                     </div>
                 </div>    
                 <!-- mayor a 320px -->
@@ -837,7 +841,7 @@
                         <a href="catalogo.html" class="btn paginas-catalogo btn-dark" aria-current="page">1</a>
                         <a href="#" class="btn paginas-catalogo btn-outline-dark">2</a>
                         <a href="#" class="btn paginas-catalogo btn-outline-dark">3</a>
-                        <a href="#" class="btn paginas-catalogo btn-outline-dark btn-icon"><i class="fa-solid fa-chevron-right"></i></a>
+                        <a href="#" class="btn paginas-catalogo btn-outline-dark"><i class="fa-solid fa-chevron-right"></i></a>
                     </div>
                 </div>
             </section>
@@ -848,21 +852,21 @@
         <div class="container-fluid">
             <!-- logo -->
             <div class="row justify-content-center">
-                <img class="logoFooter" src="../images/logo_loop_clothes_claro.svg" alt="Logo Loop clothes">
+                <img class="logo-footer" src="../images/logo_loop_clothes_claro.svg" alt="Logo Loop clothes">
             </div>
             <!-- redes sociales -->
-            <ul class="row justify-content-center my-4 my-sm-5">
-                <li class="col-2 col-sm-1 red-social-alineacion">
+            <ul class="row justify-content-center my-4 my-sm-5 text-center">
+                <li class="col-2 col-sm-1">
                     <a href="https://www.instagram.com/loopclothes.uy/" target="_blank">
                         <i class="fa-brands fa-instagram red-social-icon"></i>
                     </a>
                 </li>
-                <li class="col-2 col-sm-1 red-social-alineacion">
+                <li class="col-2 col-sm-1">
                     <a href="https://wa.me/095888132" target="_blank">
                         <i class="fa-brands fa-whatsapp red-social-icon"></i>
                     </a>
                 </li>
-                <li class="col-2 col-sm-1 red-social-alineacion">
+                <li class="col-2 col-sm-1">
                     <a href="mailto:loopclothes.uy@gmail.com" target="_blank">
                         <i class="fa-regular fa-envelope red-social-icon"></i>
                     </a>
@@ -874,6 +878,11 @@
             </div>
         </div>
     </footer>
+    <!-- Animaciones -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
